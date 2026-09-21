@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML 08 - Semantic Layout</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        .layout{
+            max-width:900px;
+            margin:auto;
+        }
+        .section{
+            background:white;
+            padding:20px;
+            margin:15px 0;
+            border-radius:10px;
+        }
+        body.dark .section{
+            background:#1f2937;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Semantic HTML</div>
+</header>
+
+<div class="layout">
+
+<header class="section">
+    <h2>Website Header</h2>
+</header>
+
+<nav class="section">
+    Home | About | Contact
+</nav>
+
+<main class="section">
+    <article>
+        <h2>Main Article</h2>
+        <p>Semantic tags improve readability and SEO.</p>
+    </article>
+</main>
+
+<aside class="section">
+    Sidebar Content
+</aside>
+
+<footer class="section">
+    © 2026 Practical Website
+</footer>
+
+<a class="btn" href="index.html">Back</a>
+
+</div>
+
+</body>
+</html>

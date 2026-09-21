@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML 12</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+<h1>Canvas Example</h1>
+</section>
+
+<canvas id="myCanvas" width="500" height="300"
+style="border:2px solid #000;display:block;margin:auto;"></canvas>
+
+<script>
+const c=document.getElementById("myCanvas");
+const ctx=c.getContext("2d");
+
+ctx.fillStyle="blue";
+ctx.fillRect(50,50,150,100);
+
+ctx.beginPath();
+ctx.arc(320,120,50,0,2*Math.PI);
+ctx.fillStyle="orange";
+ctx.fill();
+
+ctx.font="22px Arial";
+ctx.fillStyle="green";
+ctx.fillText("HTML Canvas",140,250);
+</script>
+
+<div style="text-align:center;margin:20px;">
+<a class="btn" href="index.html">Back</a>
+</div>
+
+</body>
+</html>
