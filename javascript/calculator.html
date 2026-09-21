@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial;
+background:#f4f4f4;
+}
+.calc{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+input{
+width:100%;
+padding:15px;
+font-size:24px;
+margin-bottom:10px;
+text-align:right;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(4,70px);
+gap:10px;
+}
+button{
+padding:18px;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="calc">
+
+<input id="display" readonly>
+
+<div class="grid">
+<button onclick="add('7')">7</button>
+<button onclick="add('8')">8</button>
+<button onclick="add('9')">9</button>
+<button onclick="add('/')">/</button>
+
+<button onclick="add('4')">4</button>
+<button onclick="add('5')">5</button>
+<button onclick="add('6')">6</button>
+<button onclick="add('*')">*</button>
+
+<button onclick="add('1')">1</button>
+<button onclick="add('2')">2</button>
+<button onclick="add('3')">3</button>
+<button onclick="add('-')">-</button>
+
+<button onclick="add('0')">0</button>
+<button onclick="add('.')">.</button>
+<button onclick="calc()">=</button>
+<button onclick="add('+')">+</button>
+
+<button onclick="clr()" style="grid-column:span 4;background:red;color:white">
+CLEAR
+</button>
+
+</div>
+</div>
+
+<script>
+function add(v){
+display.value+=v;
+}
+
+function clr(){
+display.value="";
+}
+
+function calc(){
+display.value=eval(display.value);
+}
+</script>
+
+</body>
+</html>

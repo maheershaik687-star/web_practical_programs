@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Calculator</title>
+<style>
+body{font-family:Arial;text-align:center;padding:50px}
+input{padding:10px}
+button{padding:10px 20px}
+</style>
+</head>
+<body>
+
+<h1>Age Calculator</h1>
+
+<input id="dob" type="date"><br><br>
+
+<button onclick="age()">Find Age</button>
+
+<h2 id="out"></h2>
+
+<script>
+function age(){
+let birth=new Date(dob.value);
+let today=new Date();
+let years=today.getFullYear()-birth.getFullYear();
+out.innerHTML="Age = "+years+" Years";
+}
+</script>
+
+</body>
+</html>

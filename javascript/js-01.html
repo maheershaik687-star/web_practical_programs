@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 01</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+<h1>Alert & Prompt</h1>
+
+<button class="btn" onclick="greet()">Click Me</button>
+
+<h2 id="result"></h2>
+
+<a class="btn" href="index.html">Back</a>
+</section>
+
+<script>
+function greet(){
+
+let name=prompt("Enter your name");
+
+alert("Welcome "+name);
+
+document.getElementById("result").innerHTML="Hello "+name;
+
+}
+</script>
+
+</body>
+</html>

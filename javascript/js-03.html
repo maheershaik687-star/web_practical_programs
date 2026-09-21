@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 03</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+
+<h1>Even or Odd</h1>
+
+<input id="num" type="number" placeholder="Enter Number">
+
+<br><br>
+
+<button class="btn" onclick="check()">Check</button>
+
+<h2 id="out"></h2>
+
+<a class="btn" href="index.html">Back</a>
+
+</section>
+
+<script>
+function check(){
+
+let n=Number(num.value);
+
+out.innerHTML=(n%2==0)?"Even Number":"Odd Number";
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stopwatch</title>
+<style>
+body{font-family:Arial;text-align:center;padding:50px}
+#time{font-size:60px;margin:30px}
+button{padding:12px 20px;margin:8px;font-size:18px}
+</style>
+</head>
+<body>
+
+<h1>Stopwatch</h1>
+<div id="time">00:00:00</div>
+
+<button onclick="start()">Start</button>
+<button onclick="stop()">Stop</button>
+<button onclick="reset()">Reset</button>
+
+<script>
+let sec=0,timer;
+
+function update(){
+let h=Math.floor(sec/3600);
+let m=Math.floor((sec%3600)/60);
+let s=sec%60;
+time.innerHTML=
+String(h).padStart(2,"0")+":"+
+String(m).padStart(2,"0")+":"+
+String(s).padStart(2,"0");
+}
+
+function start(){
+if(!timer){
+timer=setInterval(()=>{
+sec++;
+update();
+},1000);
+}
+}
+
+function stop(){
+clearInterval(timer);
+timer=null;
+}
+
+function reset(){
+stop();
+sec=0;
+update();
+}
+
+update();
+</script>
+
+</body>
+</html>

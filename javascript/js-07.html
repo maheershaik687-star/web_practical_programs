@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 07</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+
+<h1>Prime Number</h1>
+
+<input id="prime" type="number">
+
+<br><br>
+
+<button class="btn" onclick="checkPrime()">Check</button>
+
+<h2 id="result"></h2>
+
+<a class="btn" href="index.html">Back</a>
+
+</section>
+
+<script>
+function checkPrime(){
+
+let n=Number(prime.value);
+
+let p=true;
+
+if(n<2) p=false;
+
+for(let i=2;i<n;i++){
+
+if(n%i==0){
+
+p=false;
+
+break;
+
+}
+
+}
+
+result.innerHTML=p?"Prime Number":"Not Prime";
+
+}
+</script>
+
+</body>
+</html>

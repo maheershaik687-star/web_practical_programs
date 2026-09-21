@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 02</title>
+<link rel="stylesheet" href="../styles/style.css">
+<style>
+.calc{
+max-width:350px;
+margin:auto;
+display:grid;
+gap:10px;
+}
+input{
+padding:10px;
+}
+button{
+padding:10px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Simple Calculator</h1>
+</section>
+
+<div class="calc">
+
+<input id="a" type="number" placeholder="First Number">
+
+<input id="b" type="number" placeholder="Second Number">
+
+<button onclick="add()">Add</button>
+
+<h2 id="ans"></h2>
+
+<a class="btn" href="index.html">Back</a>
+
+</div>
+
+<script>
+function add(){
+
+let x=Number(a.value);
+
+let y=Number(b.value);
+
+ans.innerHTML="Answer = "+(x+y);
+
+}
+</script>
+
+</body>
+</html>

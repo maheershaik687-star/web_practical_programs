@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countdown</title>
+<style>
+body{font-family:Arial;text-align:center;padding:50px}
+input{padding:10px}
+button{padding:10px 20px}
+#out{font-size:50px;margin-top:20px}
+</style>
+</head>
+<body>
+
+<h1>Countdown Timer</h1>
+
+<input id="seconds" type="number" placeholder="Seconds">
+<button onclick="start()">Start</button>
+
+<div id="out">0</div>
+
+<script>
+let t;
+function start(){
+let s=Number(seconds.value);
+clearInterval(t);
+out.innerHTML=s;
+t=setInterval(()=>{
+s--;
+out.innerHTML=s;
+if(s<=0) clearInterval(t);
+},1000);
+}
+</script>
+
+</body>
+</html>

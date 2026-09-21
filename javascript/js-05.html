@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 05</title>
+<link rel="stylesheet" href="../styles/style.css">
+<style>
+pre{
+background:#eee;
+padding:20px;
+width:250px;
+margin:auto;
+font-size:18px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<h1>Multiplication Table</h1>
+
+<input id="table" type="number" placeholder="Enter Number">
+
+<br><br>
+
+<button class="btn" onclick="show()">Generate</button>
+
+<pre id="output"></pre>
+
+<a class="btn" href="index.html">Back</a>
+
+</section>
+
+<script>
+function show(){
+
+let n=Number(table.value);
+
+let txt="";
+
+for(let i=1;i<=10;i++){
+
+txt+=`${n} x ${i} = ${n*i}\n`;
+
+}
+
+output.textContent=txt;
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 06</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+
+<h1>Factorial</h1>
+
+<input id="fact" type="number">
+
+<br><br>
+
+<button class="btn" onclick="find()">Calculate</button>
+
+<h2 id="ans"></h2>
+
+<a class="btn" href="index.html">Back</a>
+
+</section>
+
+<script>
+function find(){
+
+let n=Number(fact.value);
+
+let f=1;
+
+for(let i=1;i<=n;i++) f*=i;
+
+ans.innerHTML="Factorial = "+f;
+
+}
+</script>
+
+</body>
+</html>

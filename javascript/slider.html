@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slider</title>
+<style>
+body{text-align:center;font-family:Arial;padding:30px}
+img{
+width:500px;
+height:300px;
+object-fit:cover;
+border-radius:12px;
+}
+button{padding:10px 20px;margin:10px}
+</style>
+</head>
+<body>
+
+<h1>Image Slider</h1>
+
+<img id="img" src="https://picsum.photos/500/300?1">
+
+<br>
+
+<button onclick="prev()">Previous</button>
+<button onclick="next()">Next</button>
+
+<script>
+let i=1;
+
+function show(){
+img.src=`https://picsum.photos/500/300?${i}`;
+}
+
+function next(){
+i++;
+if(i>5)i=1;
+show();
+}
+
+function prev(){
+i--;
+if(i<1)i=5;
+show();
+}
+</script>
+
+</body>
+</html>

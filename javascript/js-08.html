@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS 08</title>
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<section class="hero">
+
+<h1>Fibonacci Series</h1>
+
+<input id="fib" type="number" placeholder="Terms">
+
+<br><br>
+
+<button class="btn" onclick="series()">Generate</button>
+
+<h3 id="out"></h3>
+
+<a class="btn" href="index.html">Back</a>
+
+</section>
+
+<script>
+function series(){
+
+let n=Number(fib.value);
+
+let a=0,b=1;
+
+let txt="";
+
+for(let i=1;i<=n;i++){
+
+txt+=a+" ";
+
+let c=a+b;
+
+a=b;
+
+b=c;
+
+}
+
+out.innerHTML=txt;
+
+}
+</script>
+
+</body>
+</html>
