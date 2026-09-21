@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 20</title>
+<link rel="stylesheet" href="../styles/style.css">
+<style>
+.hero2{
+background:#2563eb;
+color:white;
+padding:60px;
+text-align:center;
+}
+.skills{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin:30px;
+}
+.skill{
+background:#dbeafe;
+padding:12px 20px;
+border-radius:30px;
+}
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+.project{
+background:white;
+padding:20px;
+border-radius:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="hero2">
+<h1>Maheer Shaik</h1>
+<p>Frontend Developer</p>
+</div>
+
+<h2 style="text-align:center;margin-top:30px;">Skills</h2>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">DSA</div>
+</div>
+
+<h2 style="text-align:center;">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>UNIBOOK</h3>
+<p>Online Examination Platform</p>
+</div>
+
+<div class="project">
+<h3>SmartTaskPro</h3>
+<p>Task Management Website</p>
+</div>
+
+<div class="project">
+<h3>IPL Auction</h3>
+<p>Player Statistics System</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin:30px;">
+<a class="btn" href="index.html">Back</a>
+</div>
+
+</body>
+</html>

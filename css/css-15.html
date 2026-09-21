@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 15</title>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+.loader{
+width:90px;
+height:90px;
+border:10px solid #ddd;
+border-top:10px solid #2563eb;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+</style>
+</head>
+<body>
+
+<div class="loader"></div>
+
+</body>
+</html>

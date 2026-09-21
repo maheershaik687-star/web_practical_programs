@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 10</title>
+<link rel="stylesheet" href="../styles/style.css">
+<style>
+.layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+.main,.side{
+background:white;
+padding:30px;
+border-radius:10px;
+}
+@media(max-width:768px){
+.layout{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Responsive Layout</h1>
+</section>
+
+<div class="layout">
+
+<div class="main">
+<h2>Main Content</h2>
+<p>This column becomes full width on mobile.</p>
+</div>
+
+<div class="side">
+<h3>Sidebar</h3>
+<p>Responsive design using media query.</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin:25px;">
+<a class="btn" href="index.html">Back</a>
+</div>
+
+</body>
+</html>

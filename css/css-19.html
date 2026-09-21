@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 19</title>
+<link rel="stylesheet" href="../styles/style.css">
+<style>
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+.widget{
+background:#2563eb;
+color:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+}
+.widget h2{
+font-size:40px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Dashboard UI</h1>
+</section>
+
+<div class="dashboard">
+
+<div class="widget">
+<h2>120</h2>
+<p>Students</p>
+</div>
+
+<div class="widget">
+<h2>32</h2>
+<p>Courses</p>
+</div>
+
+<div class="widget">
+<h2>98%</h2>
+<p>Attendance</p>
+</div>
+
+<div class="widget">
+<h2>12</h2>
+<p>Projects</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin:20px;">
+<a class="btn" href="index.html">Back</a>
+</div>
+
+</body>
+</html>
